@@ -1,7 +1,6 @@
-# EN.585.771.81.SP26 Capstone Project
+# EN.585.771.81.SP26 Capstone Project - Steven Qian
 
 ## Breast Cancer Neural Network Model + Predictor
-### Steven Qian
 
 This is an interactive Streamlit application that trains a neural network using a dataset from the University Wisconsin, where 3 measurements of 10 features were taken of a fine needle aspirate (FNA) image of breast masses. This dataset then classifies these breast tumors as **malignant** or **benign**. This Streamlit application allows the user to control how to train a model off this data, and then offers a predictor, allowing the user to import or manually input measurement data of a new mass and predict whether that mass is **malignant** or **benign** with an associated **confidence score**.
 
