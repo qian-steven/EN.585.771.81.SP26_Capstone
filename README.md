@@ -65,7 +65,7 @@ For each dataset, the model will return a **prediction (malignant/benign)** and 
 
 ## Running the app
 
-Install dependencies:
+Dependencies for this app:
 
 ```
 streamlit
@@ -74,14 +74,16 @@ torch
 scikit-learn
 ```
 
+Install dependencies on the machine running this app:
+
 ```bash
 pip install streamlit pandas torch scikit-learn
 ```
 
-To run the app
+Run the app with Streamlit:
 
 ```bash
 streamlit run capstone_app.py
 ```
 
-Connect to the local/network host endpoint output by Streamlit
+Connect to the local/network host endpoint output by Streamlit via a browser of your choice.
