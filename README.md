@@ -37,7 +37,12 @@ It uses a linear layer with one hidden layer, batch normalization, ReLU activati
 - Final training and validation loss displayed as metrics after each run
 - Training run history table stores all parameter combinations and results for comparison
 
-**Recommended starting point:** 100 epochs, learning rate 0.01, 16 neurons, dropout 0.2, 80/20 split.
+**Recommended starting point:** 
+- 100 epochs
+- learning rate = 0.01,
+- 16 neurons
+- dropout = 0.2
+- 80/20 train/test split
 
 **Target loss values:** Training and validation loss below 0.10, with a gap between them under 0.05.
 
