@@ -29,13 +29,11 @@ It uses a linear layer with one hidden layer, batch normalization, ReLU activati
 
 ---
 
-## Features
+## How to Use App
 
-### Training
-- Adjust all hyperparameters from the sidebar before training
-- Live loss curve updates during training (training loss in blue, validation loss in red)
-- Final training and validation loss displayed as metrics after each run
-- Training run history table stores all parameter combinations and results for comparison
+### 1. Train Data
+
+Start by adjust all hyperparameters from the sidebar before training. Once the hyperparameters are set, select the **Train Data** button to train the model. Training and validation loss will be visually updated as this occurs. During this stage, you may tune the hyperparameters to train the model multiple times and the training run history will store all historical parameter combinations and loss results. However, note that the predictor will always use the latest trained model. 
 
 **Recommended starting point:** 
 - 100 epochs
@@ -44,10 +42,12 @@ It uses a linear layer with one hidden layer, batch normalization, ReLU activati
 - dropout = 0.2
 - 80/20 train/test split
 
-**Target loss values:** Training and validation loss below 0.10, with a gap between them under 0.05.
+**Target loss values:** 
+- Training and validation loss below 0.10
+- Gap between them under 0.05.
 
-### Predictor
-Two input methods are available after training:
+### 2. Predict Data
+After training the model, there are two ways to input data:
 
 **CSV Upload**
 - Upload a CSV file with a complete set of 30 columns for the 30 features
@@ -58,6 +58,8 @@ Two input methods are available after training:
 - Enter all 30 feature values directly in the app
 - Fields are organized by measurement type (Mean, Standard Error, Worst)
 - Defaults to dataset averages; bounded by dataset min/max
+
+For each dataset, the model will return a **prediction (malignant/benign)** and a **confidence score**.
 
 ---
 
