@@ -113,7 +113,7 @@ st.sidebar.header("Model Parameters")
 epochs = st.sidebar.slider(
     "Epochs", 
     min_value=50, 
-    max_value=300, 
+    max_value=600,
     value=100, 
     step=10,
     help="Number of full passes through the training data. More epochs allow more learning but risk overfitting."
